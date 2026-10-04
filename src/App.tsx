@@ -317,12 +317,12 @@ Tapi tenang ajaa, buat aku kamu bakal tetep jadi bayi gede aku selamanya (˶ᵔ 
 
 Kamu adalah orang yang bikin semuanya jadi lebih baik cuma karena kamu ada di situ.
 I can forget any of my bad thoughts as soon as I see your smile.
-And your laugh has always been my favorite music to hear. (´｡• ω •｡`)
+And your laugh has always been my favorite music to hear. (´｡• ω •｡\`)
 
 Untuk 21 tahun kamu jadi manusia paling hebat dan paling gemesshin,
 dan untuk bertahun-tahun ke depan yang bakal aku isi dengan ngisengin kamu terus pake cinta aku yang lebay ini mwehehehe ヾ(≧▽≦*)o
 
-Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡;
+Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡
 `;
 
   return (
