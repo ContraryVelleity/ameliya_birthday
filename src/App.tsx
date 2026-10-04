@@ -798,7 +798,7 @@ function MusicToggle() {
 
   // Musik dari folder public/audio/
   // Kalau nama file berbeda, ganti 'music.mp3' dengan nama file kamu
-  const MUSIC_URL = '/audio/music.mp3';
+  const MUSIC_URL = '/public/audio/music.mp3';
 
   useEffect(() => {
     audioRef.current = new Audio(MUSIC_URL);
