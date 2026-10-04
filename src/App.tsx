@@ -796,8 +796,8 @@ function MusicToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Musik dari Google Drive
-  const MUSIC_URL = 'https://drive.google.com/uc?export=download&id=1BviPOHtZX6Wg0Enix_AI8lbOLdqryebk';
+  // Musik dari Catbox.moe
+  const MUSIC_URL = 'https://files.catbox.moe/11xd5j.mp3';
 
   useEffect(() => {
     audioRef.current = new Audio(MUSIC_URL);
