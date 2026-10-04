@@ -794,11 +794,44 @@ function FooterSection() {
 // ==================== MUSIC TOGGLE ====================
 function MusicToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Ganti URL ini dengan URL musik kamu (format .mp3)
+  // Contoh free sources:
+  // - Archive.org: https://archive.org/download/[filename]/[filename].mp3
+  // - Pixabay: download dulu, upload ke archive.org
+  const MUSIC_URL = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'; // Placeholder - ganti dengan URL musik kamu
+
+  useEffect(() => {
+    audioRef.current = new Audio(MUSIC_URL);
+    audioRef.current.loop = true;
+    audioRef.current.volume = 0.5;
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  const toggleMusic = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play().catch((err) => {
+        console.log('Autoplay blocked:', err);
+      });
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <motion.button
       className="fixed top-4 right-4 z-[100] glass rounded-full w-12 h-12 flex items-center justify-center shadow-lg cursor-pointer"
-      onClick={() => setIsPlaying(!isPlaying)}
+      onClick={toggleMusic}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       animate={isPlaying ? { rotate: [0, 10, -10, 0] } : {}}
