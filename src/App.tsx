@@ -309,20 +309,20 @@ Your beautiful face shines like moonlight.
 
 🌙
 
-Hey Ameliya Virginnita! 🎉
+Halooo sayangkuuu (❁´◡`❁)
 
-Can you believe you're 21 now? Like, officially an adult adult. 
-No more "I'm still young" card — you're a full-blown grown up! 
-(But don't worry, you'll always be young in my heart 💕)
+Gak kerasa yaa sekarang umur kamu udah 21 tahun?? (⁄ ⁄•⁄ω⁄•⁄ ⁄)
+Yaahh udah gak bisa lagi ngeles "aku kan masih bayi", sekarang kamu soalnya udah dewasa beneran, udah jadi mbak mbak gemes (emang selalu gemes heheh) (/ω＼)
+Tapi tenang ajaa, buat aku kamu bakal tetep jadi bayi gede aku selamanya (˶ᵔ ᵕ ᵔ˶) ♡
 
-You're the kind of person who makes everything better just by being there. 
-Your smile could literally cure the Monday blues. 
-Your laugh is my favorite sound in the entire universe.
+Kamu adalah orang yang bikin semuanya jadi lebih baik cuma karena kamu ada di situ.
+I can forget any of my bad thoughts as soon as I see your smile.
+And your laugh has always been my favorite music to hear. (´｡• ω •｡`)
 
-Here's to 21 years of being absolutely amazing, 
-and to many more years of me annoying you with my love. 😘
+Untuk 21 tahun kamu jadi manusia paling hebat dan paling gemesshin,
+dan untuk bertahun-tahun ke depan yang bakal aku isi dengan ngisengin kamu terus pake cinta aku yang lebay ini mwehehehe ヾ(≧▽≦*)o
 
-Happy birthday, my favorite human! 🎂✨`;
+Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡;
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10">
@@ -402,26 +402,27 @@ Happy birthday, my favorite human! 🎂✨`;
 function ReasonsSection() {
   const reasons = [
     { icon: '😊', text: 'Your smile lights up my world' },
-    { icon: '🤗', text: 'Your hugs feel like home' },
-    { icon: '😂', text: 'You make me laugh until I cry' },
+    { icon: '😊', text: "Your smile lights up my world" },
+    { icon: '🤗', text: "Your hugs feel like home" },
+    { icon: '😂', text: "You make me laugh until I cry" },
     { icon: '💪', text: "You're stronger than you think" },
-    { icon: '🌟', text: 'You inspire me daily' },
-    { icon: '🎵', text: 'Your voice is my favorite melody' },
+    { icon: '🌟', text: "You inspire me daily" },
+    { icon: '🎵', text: "Your voice is my favorite melody" },
     { icon: '🧠', text: "You're ridiculously smart" },
-    { icon: '🦋', text: 'You make boring things fun' },
-    { icon: '🌈', text: 'You bring color to gray days' },
-    { icon: '☕', text: 'Coffee dates with you = heaven' },
-    { icon: '🎭', text: 'Your random faces crack me up' },
-    { icon: '💫', text: 'You believe in me always' },
-    { icon: '🍕', text: 'You share your food (mostly)' },
-    { icon: '🌙', text: 'Late night talks with you hit different' },
+    { icon: '🦋', text: "You make boring things fun" },
+    { icon: '🌈', text: "You bring color to gray days" },
+    { icon: '☕', text: "Coffee dates with you = heaven" },
+    { icon: '🎭', text: "Your random faces crack me up" },
+    { icon: '💫', text: "You believe in me always" },
+    { icon: '🍕', text: "You share your food (mostly)" },
+    { icon: '🌙', text: "Late night talks with you hit different" },
     { icon: '🎨', text: "You're creative and unique" },
-    { icon: '🐱', text: 'You love animals so pure' },
-    { icon: '💝', text: 'Your heart is the biggest' },
+    { icon: '🐱', text: "You love animals so pure" },
+    { icon: '💝', text: "Your heart is the biggest" },
     { icon: '🌺', text: "You're beautiful inside & out" },
-    { icon: '🎯', text: 'You always know what to say' },
-    { icon: '🧸', text: 'You make me feel safe' },
-    { icon: '♾️', text: "You're my forever person" },
+    { icon: '🎯', text: "You always know what to say" },
+    { icon: '🧸', text: "You make me feel safe" },
+    { icon: '♾', text: "You're my forever person" },
   ];
 
   return (
@@ -762,7 +763,7 @@ function FooterSection() {
                 - dari Rama
               </p>
               <p className="font-poppins text-sm text-[#5A8D7A]/60 mb-6">
-                Happy 21st birthday, my love. You're the best thing that ever happened to me. 🥺💕
+                Happy 21st birthday, my lovely girl. You're the best thing that ever happened to me. (*/ω＼*)
               </p>
 
               <motion.button
