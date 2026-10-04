@@ -476,12 +476,12 @@ function ReasonsSection() {
 // ==================== GALLERY SECTION ====================
 function GallerySection() {
   const photos = [
-    { color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
-    { color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
-    { color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
-    { color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
-    { color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
-    { color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
+    { image: '/images/photo1.jpg', color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
+    { image: '/images/photo2.jpg', color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
+    { image: '/images/photo3.jpg', color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
+    { image: '/images/photo4.jpg', color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
+    { image: '/images/photo5.jpg', color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
+    { image: '/images/photo6.jpg', color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
   ];
 
   return (
@@ -519,10 +519,18 @@ function GallerySection() {
               whileTap={{ scale: 0.95 }}
             >
               <div
-                className="w-full h-44 md:h-52 rounded-xl flex items-center justify-center"
+                className="w-full h-44 md:h-52 rounded-xl flex items-center justify-center overflow-hidden"
                 style={{ backgroundColor: photo.color }}
               >
-                <span className="text-5xl md:text-6xl">{photo.emoji}</span>
+                {photo.image ? (
+                  <img
+                    src={photo.image}
+                    alt={photo.caption}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-5xl md:text-6xl">{photo.emoji}</span>
+                )}
               </div>
               <p className="font-poppins text-xs md:text-sm text-[#5A8D7A] text-center mt-3">
                 {photo.caption}
