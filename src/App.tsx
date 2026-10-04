@@ -196,7 +196,7 @@ function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
       if (index >= fullText.length) clearInterval(interval);
     }, 80);
     return () => clearInterval(interval);
-  }, []);
+  }, [fullText]);
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10">
@@ -309,7 +309,7 @@ Your beautiful face shines like moonlight.
 
 🌙
 
-Halooo sayangkuuu (❁´◡\`❁)`;
+Halooo sayangkuuu (❁´◡\`❁)
 
 Gak kerasa yaa sekarang umur kamu udah 21 tahun?? (⁄ ⁄•⁄ω⁄•⁄ ⁄)
 Yaahh udah gak bisa lagi ngeles "aku kan masih bayi", sekarang kamu soalnya udah dewasa beneran, udah jadi mbak mbak gemes (emang selalu gemes heheh) (/ω＼)
