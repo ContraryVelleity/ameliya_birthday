@@ -796,9 +796,8 @@ function MusicToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Musik dari folder public/audio/
-  // Kalau nama file berbeda, ganti 'music.mp3' dengan nama file kamu
-  const MUSIC_URL = '/audio/music.mp3';
+  // Musik dari Google Drive
+  const MUSIC_URL = 'https://drive.google.com/uc?export=download&id=1BviPOHtZX6Wg0Enix_AI8lbOLdqryebk';
 
   useEffect(() => {
     audioRef.current = new Audio(MUSIC_URL);
