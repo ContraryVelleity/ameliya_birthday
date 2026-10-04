@@ -476,12 +476,12 @@ function ReasonsSection() {
 // ==================== GALLERY SECTION ====================
 function GallerySection() {
   const photos = [
-    { image: 'https://image.qwenlm.ai/generated-images/b661b835-7dcf-48bb-ae1d-58f46480595c/_result.png', color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
-    { image: 'https://image.qwenlm.ai/generated-images/761c3e5a-3c59-4063-b952-c75d92259200/_result.png', color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
-    { image: 'https://image.qwenlm.ai/generated-images/bec4d31b-1820-40f4-aa4b-d775d3194d42/_result.png', color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
-    { image: 'https://image.qwenlm.ai/generated-images/42d7f969-2ba0-4330-bf17-da61706d8e46/_result.png', color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
-    { image: 'https://image.qwenlm.ai/generated-images/597751d3-f35a-4bf8-8b07-d151a9ed2269/_result.png', color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
-    { image: 'https://image.qwenlm.ai/generated-images/3c8b217c-a4f7-4a90-8370-5b7e68dad7fe/_result.png', color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
+    { image: 'https://i.ibb.co.com/XrG7NrHx/photo1.jpg', color: '#C1E8CF', emoji: '📸', caption: 'The photo that made me fell in love ~' },
+    { image: 'https://i.ibb.co.com/JWNrfzZ5/photo2.jpg', color: '#A9D6E5', emoji: '🌅', caption: 'Accidentally wearing like couples..' },
+    { image: 'https://i.ibb.co.com/bRqTnF8m/photo3.jpg', color: '#D9F0E0', emoji: '🤳', caption: 'The smile that i could look for hours.' },
+    { image: 'https://i.ibb.co.com/gZhHdds8/photo4.jpg', color: '#B9E4F5', emoji: '🎉', caption: 'Ayam Mbok Matah you like so much!' },
+    { image: 'https://i.ibb.co.com/RMFDhnP/photo5.jpg', color: '#E8F5E9', emoji: '💕', caption: 'Gohan made us cry...' },
+    { image: 'https://i.ibb.co.com/4Z9ydPLT/photo6.jpg', color: '#E3F2FD', emoji: '🌸', caption: 'Recent beautiful photo of you!' },
   ];
 
   return (
