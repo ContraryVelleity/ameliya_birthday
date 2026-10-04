@@ -196,7 +196,7 @@ function HeroSection({ onCtaClick }: { onCtaClick: () => void }) {
       if (index >= fullText.length) clearInterval(interval);
     }, 80);
     return () => clearInterval(interval);
-  }, []);
+  }, [fullText]);
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10">
@@ -401,7 +401,6 @@ Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡
 // ==================== 21 REASONS SECTION ====================
 function ReasonsSection() {
   const reasons = [
-    { icon: '😊', text: 'Your smile lights up my world' },
     { icon: '😊', text: "Your smile lights up my world" },
     { icon: '🤗', text: "Your hugs feel like home" },
     { icon: '😂', text: "You make me laugh until I cry" },
