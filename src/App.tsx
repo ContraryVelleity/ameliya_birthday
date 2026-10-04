@@ -309,7 +309,7 @@ Your beautiful face shines like moonlight.
 
 🌙
 
-Halooo sayangkuuu (❁´◡`❁)
+Halooo sayangkuuu (❁´◡\`❁)
 
 Gak kerasa yaa sekarang umur kamu udah 21 tahun?? (⁄ ⁄•⁄ω⁄•⁄ ⁄)
 Yaahh udah gak bisa lagi ngeles "aku kan masih bayi", sekarang kamu soalnya udah dewasa beneran, udah jadi mbak mbak gemes (emang selalu gemes heheh) (/ω＼)
@@ -317,12 +317,12 @@ Tapi tenang ajaa, buat aku kamu bakal tetep jadi bayi gede aku selamanya (˶ᵔ 
 
 Kamu adalah orang yang bikin semuanya jadi lebih baik cuma karena kamu ada di situ.
 I can forget any of my bad thoughts as soon as I see your smile.
-And your laugh has always been my favorite music to hear. (´｡• ω •｡`)
+And your laugh has always been my favorite music to hear. (´｡• ω •｡\`)
 
 Untuk 21 tahun kamu jadi manusia paling hebat dan paling gemesshin,
 dan untuk bertahun-tahun ke depan yang bakal aku isi dengan ngisengin kamu terus pake cinta aku yang lebay ini mwehehehe ヾ(≧▽≦*)o
 
-Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡;
+Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡`;
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10">
@@ -477,12 +477,12 @@ function ReasonsSection() {
 // ==================== GALLERY SECTION ====================
 function GallerySection() {
   const photos = [
-    { image: '/images/photo1.jpg', color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
-    { image: '/images/photo2.jpg', color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
-    { image: '/images/photo3.jpg', color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
-    { image: '/images/photo4.jpg', color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
-    { image: '/images/photo5.jpg', color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
-    { image: '/images/photo6.jpg', color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
+    { image: 'https://image.qwenlm.ai/generated-images/b661b835-7dcf-48bb-ae1d-58f46480595c/_result.png', color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
+    { image: 'https://image.qwenlm.ai/generated-images/761c3e5a-3c59-4063-b952-c75d92259200/_result.png', color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
+    { image: 'https://image.qwenlm.ai/generated-images/bec4d31b-1820-40f4-aa4b-d775d3194d42/_result.png', color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
+    { image: 'https://image.qwenlm.ai/generated-images/42d7f969-2ba0-4330-bf17-da61706d8e46/_result.png', color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
+    { image: 'https://image.qwenlm.ai/generated-images/597751d3-f35a-4bf8-8b07-d151a9ed2269/_result.png', color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
+    { image: 'https://image.qwenlm.ai/generated-images/3c8b217c-a4f7-4a90-8370-5b7e68dad7fe/_result.png', color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
   ];
 
   return (
