@@ -323,6 +323,7 @@ Untuk 21 tahun kamu jadi manusia paling hebat dan paling gemesshin,
 dan untuk bertahun-tahun ke depan yang bakal aku isi dengan ngisengin kamu terus pake cinta aku yang lebay ini mwehehehe ヾ(≧▽≦*)o
 
 Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡) ♡;
+`;
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative z-10">
