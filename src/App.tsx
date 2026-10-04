@@ -794,15 +794,30 @@ function FooterSection() {
 // ==================== MUSIC TOGGLE ====================
 function MusicToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [audioError, setAudioError] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Musik dari Catbox.moe
   const MUSIC_URL = 'https://files.catbox.moe/11xd5j.mp3';
 
   useEffect(() => {
-    audioRef.current = new Audio(MUSIC_URL);
-    audioRef.current.loop = true;
-    audioRef.current.volume = 0.5;
+    const audio = new Audio();
+    audio.preload = 'auto';
+    audio.loop = true;
+    audio.volume = 0.5;
+    audio.crossOrigin = 'anonymous';
+    
+    audio.addEventListener('canplaythrough', () => {
+      console.log('✅ Audio ready to play');
+    });
+    
+    audio.addEventListener('error', (e) => {
+      console.error('❌ Audio error:', e);
+      setAudioError(true);
+    });
+    
+    audio.src = MUSIC_URL;
+    audioRef.current = audio;
 
     return () => {
       if (audioRef.current) {
@@ -812,17 +827,25 @@ function MusicToggle() {
     };
   }, []);
 
-  const toggleMusic = () => {
-    if (!audioRef.current) return;
+  const toggleMusic = async () => {
+    if (!audioRef.current) {
+      console.error('Audio not initialized');
+      return;
+    }
 
     if (isPlaying) {
       audioRef.current.pause();
+      setIsPlaying(false);
     } else {
-      audioRef.current.play().catch((err) => {
-        console.log('Autoplay blocked:', err);
-      });
+      try {
+        await audioRef.current.play();
+        setIsPlaying(true);
+        console.log('🎵 Music playing');
+      } catch (err) {
+        console.error('❌ Play failed:', err);
+        setAudioError(true);
+      }
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -833,9 +856,9 @@ function MusicToggle() {
       whileTap={{ scale: 0.9 }}
       animate={isPlaying ? { rotate: [0, 10, -10, 0] } : {}}
       transition={isPlaying ? { duration: 1, repeat: Infinity } : {}}
-      title={isPlaying ? 'Pause music' : 'Play music'}
+      title={audioError ? 'Music error - check console' : isPlaying ? 'Pause music' : 'Play music'}
     >
-      <span className="text-xl">{isPlaying ? '🎵' : '🔇'}</span>
+      <span className="text-xl">{audioError ? '⚠️' : isPlaying ? '🎵' : '🔇'}</span>
     </motion.button>
   );
 }
