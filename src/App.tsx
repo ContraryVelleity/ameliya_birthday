@@ -309,7 +309,7 @@ Your beautiful face shines like moonlight.
 
 🌙
 
-Halooo sayangkuuu (❁´◡`❁)
+Halooo sayangkuuu (❁´◡\`❁)`;
 
 Gak kerasa yaa sekarang umur kamu udah 21 tahun?? (⁄ ⁄•⁄ω⁄•⁄ ⁄)
 Yaahh udah gak bisa lagi ngeles "aku kan masih bayi", sekarang kamu soalnya udah dewasa beneran, udah jadi mbak mbak gemes (emang selalu gemes heheh) (/ω＼)
