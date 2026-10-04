@@ -796,11 +796,9 @@ function MusicToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Ganti URL ini dengan URL musik kamu (format .mp3)
-  // Contoh free sources:
-  // - Archive.org: https://archive.org/download/[filename]/[filename].mp3
-  // - Pixabay: download dulu, upload ke archive.org
-  const MUSIC_URL = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'; // Placeholder - ganti dengan URL musik kamu
+  // Musik dari folder public/audio/
+  // Kalau nama file berbeda, ganti 'music.mp3' dengan nama file kamu
+  const MUSIC_URL = '/audio/music.mp3';
 
   useEffect(() => {
     audioRef.current = new Audio(MUSIC_URL);
