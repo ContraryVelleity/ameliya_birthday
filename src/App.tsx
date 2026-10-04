@@ -402,7 +402,6 @@ Selamat ulang tahun sayangkuu, manusia favoritku se alam semesta :3 (｡>﹏<｡
 // ==================== 21 REASONS SECTION ====================
 function ReasonsSection() {
   const reasons = [
-    { icon: '😊', text: 'Your smile lights up my world' },
     { icon: '😊', text: "Your smile lights up my world" },
     { icon: '🤗', text: "Your hugs feel like home" },
     { icon: '😂', text: "You make me laugh until I cry" },
@@ -478,12 +477,12 @@ function ReasonsSection() {
 // ==================== GALLERY SECTION ====================
 function GallerySection() {
   const photos = [
-    { image: '/images/photo1.jpg', color: '#C1E8CF', emoji: '📸', caption: 'Our first adventure~' },
-    { image: '/images/photo2.jpg', color: '#A9D6E5', emoji: '🌅', caption: 'That sunset tho' },
-    { image: '/images/photo3.jpg', color: '#D9F0E0', emoji: '🤳', caption: 'Silly faces only' },
-    { image: '/images/photo4.jpg', color: '#B9E4F5', emoji: '🎉', caption: 'Celebration mode!' },
-    { image: '/images/photo5.jpg', color: '#E8F5E9', emoji: '💕', caption: 'Us being us' },
-    { image: '/images/photo6.jpg', color: '#E3F2FD', emoji: '🌸', caption: 'Cherry blossom day' },
+    { image: '/images/photo1.jpg', color: '#C1E8CF', emoji: '📸', caption: 'The photo that made me fell in love' },
+    { image: '/images/photo2.jpg', color: '#A9D6E5', emoji: '🩵', caption: 'Accidentally wearing couples' },
+    { image: '/images/photo3.jpg', color: '#D9F0E0', emoji: '☺️', caption: 'The smile i could look for hours' },
+    { image: '/images/photo4.jpg', color: '#B9E4F5', emoji: '🍗', caption: 'The Ayam Mbok Matah you like so much' },
+    { image: '/images/photo5.jpg', color: '#E8F5E9', emoji: '🐶', caption: 'Gohan made us cry' },
+    { image: '/images/photo6.jpg', color: '#E3F2FD', emoji: '🌷', caption: 'Recent picture of you' },
   ];
 
   return (
